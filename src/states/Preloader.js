@@ -6,13 +6,13 @@
  * effects, while displaying a busy splash screen.
  */
 
-import assets from '../assets';
+import assets from '../assets'
 
 export default class Preloader extends Phaser.State {
 
   preload() {
-    this.showSplashScreen();
-    this.load.pack('game', null, assets);
+    this.showSplashScreen()
+    this.load.pack('game', null, assets)
   }
 
   create() {
@@ -20,14 +20,14 @@ export default class Preloader extends Phaser.State {
     // Don't forget to `import` them first. Example:
     //this.game.myPlugin = this.plugins.add(MyPlugin/*, ... parameters ... */);
 
-    this.state.start('Game');
+    this.state.start('Game')
   }
 
   // --------------------------------------------------------------------------
 
   showSplashScreen() {
-    this.add.image(0, 0, 'splash-screen');
-    this.load.setPreloadSprite(this.add.image(82, 282, 'progress-bar'));
+    this.add.image(0, 0, 'splash-screen')
+    this.load.setPreloadSprite(this.add.image(82, 282, 'progress-bar'))
   }
 
 }

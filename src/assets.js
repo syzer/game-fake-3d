@@ -20,5 +20,8 @@ export default {
   game: [{
     key: 'phaser',
     type: 'image'
+  }, {
+    key: 'tree',
+    type: 'image'
   }]
-};
+}

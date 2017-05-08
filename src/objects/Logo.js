@@ -9,35 +9,27 @@
 export default class Logo extends Phaser.Sprite {
 
   constructor(game, x, y) {
-    super(game, x, y + 252, 'progress-bar')
-    this.tint = 0x000000
-    this.alpha = 0.1
-    this.anchor.set(0.5, 0)
-    this.angle = -220.8
-    this.scale.setMagnitude(1.5, 1)
+    super(game, x, y, 'tree')
+    this.anchor.set(0.5)
+    this.blendMode = this.blendMode.NORMAL
 
+    this.shadow = this.game.add.sprite(x - 14, y + 86, 'tree')
+    this.shadow.anchor.set(0.5)
+    this.shadow.tint = 0x000000
+    this.shadow.alpha = 0.1
+    this.shadow.anchor.set(0.445, 1)
 
-    this.image = this.game.add.sprite(x, y + 50, 'progress-bar')
-    this.image.anchor.set(0.5)
-    this.image.alpha = 1
-    // this.image.scale.setMagnitude(0.5)
-
-    this.game.add.existing(this.image)
-    this.rotationStep = 0.3
+    this.game.add.existing(this.shadow)
+    this.rotationStep = -1.13
   }
 
   update() {
-    console.log(this.angle)
-    this.angle += this.rotationStep
-    if (this.angle === -150) {
-      this.rotationStep = -2.8
-    //   console.log(this.rotationStep)
-    } else if (this.angle === 150 ) {
-      this.rotationStep = 2.8
+    this.shadow.angle += this.rotationStep
+    if (this.shadow.angle <= -40) {
+      this.rotationStep = 1.13
+    } else if (this.shadow.angle >= 45 ) {
+      this.rotationStep = -1.13
     }
-
-    // this.image.angle = 0
-    this.game.add.existing(this.image)
 
   }
 
