@@ -18,6 +18,8 @@ export default class Game extends Phaser.State {
     this.add.existing(new Logo(this.game, x - 100, y))
     this.add.existing(new Logo(this.game, x + 200, y))
     this.add.existing(new Logo(this.game, x, y))
+
+    this.game.debug.text('Moving trees', 20, 20)
   }
 
 }
