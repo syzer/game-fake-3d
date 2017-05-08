@@ -18,9 +18,6 @@ export default {
 
   // -- General assets used throughout the game.
   game: [{
-    key: 'phaser',
-    type: 'image'
-  }, {
     key: 'tree',
     type: 'image'
   }]
