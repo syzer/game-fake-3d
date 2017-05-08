@@ -2,6 +2,8 @@
 
 >   It&#39;s a fake 3d so I can exchange this code (barter) for doge animation...
 
+![moving tree shadow](https://raw.githubusercontent.com/syzer/game-fake-3d/master/moving-trees.gif)
+
 ---
 
 Congrats! To manage your project and start developing your new game right away,
@@ -23,8 +25,10 @@ Should you consider distributing your game as an open source project, please
 choose and [include a LICENSE file](http://choosealicense.com/) for your project.
 
 
-TODO groups for shadow
+## TODO 
 
+- [ ] groups for shadow
+```js
 // Groups for drawing layers
 var back_layer = game.add.group();
 var mid_layer = game.add.group();
@@ -34,6 +38,6 @@ back_layer.create(0, 0, "bg");
 front_layer.create(0, 0, "front");
 mid_layer.create(300, 200, "object1");
 mid_layer.create(500, 400, "object2");
+```
 
-
-http://rotates.org/phaser/iso/examples/interaction.htm
+- [isometric](http://rotates.org/phaser/iso/examples/interaction.htm)
