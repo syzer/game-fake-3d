@@ -21,3 +21,19 @@ npm run test-dist # Build and run your project
 
 Should you consider distributing your game as an open source project, please
 choose and [include a LICENSE file](http://choosealicense.com/) for your project.
+
+
+TODO groups for shadow
+
+// Groups for drawing layers
+var back_layer = game.add.group();
+var mid_layer = game.add.group();
+var front_layer = game.add.group();
+// It doesn't matter what order you add things to these groups, the draw order will be back, mid, front (unless you change it...)
+back_layer.create(0, 0, "bg");
+front_layer.create(0, 0, "front");
+mid_layer.create(300, 200, "object1");
+mid_layer.create(500, 400, "object2");
+
+
+http://rotates.org/phaser/iso/examples/interaction.htm
