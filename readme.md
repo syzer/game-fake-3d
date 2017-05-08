@@ -2,7 +2,7 @@
 
 >   It&#39;s a fake 3d so I can exchange this code (barter) for doge animation...
 
-![moving tree shadow](https://raw.githubusercontent.com/syzer/game-fake-3d/master/moving-trees.gif)
+![moving tree shadow](https://raw.githubusercontent.com/syzer/game-fake-3d/master/docs/moving-trees.gif)
 
 ---
 
