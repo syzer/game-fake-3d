@@ -1,5 +1,7 @@
 # [fake-3d](https://example.com/my-game/)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/syzer/game-fake-3d.svg)](https://greenkeeper.io/)
+
 >   It&#39;s a fake 3d so I can exchange this code (barter) for doge animation...
 
 ![moving tree shadow](https://raw.githubusercontent.com/syzer/game-fake-3d/master/docs/moving-trees.gif)
